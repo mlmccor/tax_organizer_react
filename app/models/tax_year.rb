@@ -1,0 +1,2 @@
+class TaxYear < ApplicationRecord
+end
