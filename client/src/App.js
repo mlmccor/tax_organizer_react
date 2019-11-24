@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>This Works</h1>
+      <Income/>
     </div>
   );
 }
