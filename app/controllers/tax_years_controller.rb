@@ -16,4 +16,10 @@ class TaxYearsController < ApplicationController
       redirect_to new_session_path
     end
   end
+
+  def create
+    @tax_year = TaxYear.find_or_create_by(year: DateTime.now.year)
+    respond_to do |format|
+      format.json {render @tax_year}
+  end
 end
